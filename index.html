@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You Mayashi 💟✨</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BACKGROUND
+    ========================== -->
+
+    <div class="background">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <div id="particles"></div>
+
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <section class="screen intro-screen active" id="introScreen">
+
+        <div class="glass-card intro-card">
+
+            <div class="intro-heart">💗</div>
+
+            <span class="eyebrow">
+                A tiny surprise for you
+            </span>
+
+            <h1>
+                Hey...
+                <span>wait a second.</span>
+            </h1>
+
+            <p>
+                I made something especially for you!
+                So please don't judge me before seeing it! 😔👉🏻👈🏻
+            </p>
+
+            <button class="primary-btn" id="startBtn">
+                Open it 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         QUESTION
+    ========================== -->
+
+    <section class="screen question-screen" id="questionScreen">
+
+        <div class="glass-card question-card">
+
+            <div class="question-icon">
+                🥺
+            </div>
+
+            <span class="eyebrow">
+                One very serious question
+            </span>
+
+            <h2>
+                Will you stay with me
+                <span>forever Mayashi!? 🫠</span>
+            </h2>
+
+            <p class="question-subtitle" id="funnyText">
+                Choose wisely... 👀
+            </p>
+
+            <div class="buttons">
+
+                <button class="yes-btn" id="yesBtn">
+                    YES 😘💋
+                </button>
+
+                <button class="no-btn" id="noBtn">
+                    NO 🙄
+                </button>
+
+            </div>
+
+            <div class="attempts">
+                NO attempts:
+                <strong id="counter">0</strong>
+                😂
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         TRANSITION
+    ========================== -->
+
+    <section class="screen transition-screen" id="transitionScreen">
+
+        <div class="transition-content">
+
+            <div class="big-heart">
+                ❤️
+            </div>
+
+            <h2>
+                I knew it darling! 😭😭😭...
+            </h2>
+
+            <p>
+                But there's something else I wanted to tell you! 😌🤌🏻
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         LOVE CARDS
+    ========================== -->
+
+    <section class="screen cards-screen" id="cardsScreen">
+
+        <div class="cards-heading">
+
+            <span class="eyebrow">
+                Just a few things...
+            </span>
+
+            <h2>
+                Before you see
+                <span>the last surprise! 💗</span>
+            </h2>
+
+            <p>
+                Swipe the cards to left! 👉🏻👈🏻  →
+            </p>
+
+        </div>
+
+
+        <div class="card-stack" id="cardStack">
+
+            <article class="love-card">
+                <span class="card-number">01</span>
+                <div class="card-icon">🌷</div>
+                <h3>You make my ordinary days special!</h3>
+                <p>
+                    Somehow, even the simplest moments
+                    become memories when you're around! 😌✨
+                </p>
+                <span class="swipe-hint">Swipe me →</span>
+            </article>
+
+
+            <article class="love-card">
+                <span class="card-number">02</span>
+                <div class="card-icon">💐</div>
+                <h3>You're the best person of my life! 🫂❤️‍🩹 </h3>
+                <p>
+                    And yes, you're probably going to have
+                    to tolerate me for a very, very long time! 😌
+                </p>
+                <span class="swipe-hint">Keep going →</span>
+            </article>
+
+
+            <article class="love-card">
+                <span class="card-number">03</span>
+                <div class="card-icon">🌙</div>
+                <h3>I love our little moments! 😭✨</h3>
+                <p>
+                    The random talks, silly jokes,
+                    annoying each other, your anger! ❤️💫
+                </p>
+                <span class="swipe-hint">One more →</span>
+            </article>
+
+
+            <article class="love-card">
+                <span class="card-number">04</span>
+                <div class="card-icon">💞</div>
+                <h3>And honestly...</h3>
+                <p>
+                    If I had to choose again,
+                    I'd still choose you! ❤️‍🩹🤌🏻
+                </p>
+                <span class="swipe-hint">Almost there →</span>
+            </article>
+
+
+            <article class="love-card">
+                <span class="card-number">05</span>
+                <div class="card-icon">♾️</div>
+                <h3>Here's the important part.</h3>
+                <p>
+                    You're stuck with me now!
+                    No refunds. No exchanges! 😘💋
+                </p>
+                <span class="swipe-hint">Last one →</span>
+            </article>
+
+        </div>
+
+        <div class="card-progress">
+            <span id="cardProgress">1</span> / 5
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PHOTO REVEAL
+    ========================== -->
+
+    <section class="screen photo-screen" id="photoScreen">
+
+        <div class="photo-wrapper">
+
+            <div class="photo-glow"></div>
+
+            <div class="photo-frame">
+
+                <img
+                    src="Snapchat-1830106917.jpg"
+                    alt="Our memory"
+                >
+
+                <div class="photo-overlay"></div>
+
+            </div>
+
+
+            <div class="photo-caption">
+
+                <span>And this...</span>
+
+                <h2>
+                    is one of my
+                    <span>favorite memories! 🤍✨ </span>
+                </h2>
+
+                <p>
+                    Some people become memories! 
+                    Some become home! ❤️‍🩹🫶🏻
+                </p>
+
+            </div>
+
+            <button class="music-btn" id="musicBtn">
+                🎵 Our song
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FINAL SCREEN
+    ========================== -->
+
+<section class="screen final-screen" id="finalScreen">
+
+    <!-- Cinematic background -->
+    <div class="cinematic-vignette"></div>
+    <div class="film-grain"></div>
+
+    <div class="final-light final-light-1"></div>
+    <div class="final-light final-light-2"></div>
+
+    <!-- Floating love atmosphere -->
+    <div class="final-floating-loves">
+
+        <span>💗</span>
+        <span>💕</span>
+        <span>🌷</span>
+        <span>🪷</span>
+        <span>🌸</span>
+        <span>💖</span>
+        <span>🌹</span>
+        <span>💞</span>
+        <span>✨</span>
+        <span>💗</span>
+        <span>🌸</span>
+        <span>💕</span>
+
+    </div>
+
+
+    <!-- Final message -->
+    <div class="final-content">
+
+        <div class="final-eyebrow">
+            💗
+        </div>
+
+        <p class="final-line">
+            One last thing...
+        </p>
+
+        <h1 class="final-name">
+            You + Me <span>forever. ♾️</span>
+        </h1>
+
+        <p class="final-message">
+            Whatever happens, wherever life takes us,
+            I'm really glad our paths crossed!
+        </p>
+
+        <div class="final-flowers">
+            🌷 🪷 🌸
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- =========================
+         AUDIO
+    ========================== -->
+
+    <audio
+        id="loveSong"
+        preload="auto"
+    >
+        <source
+            src="Die With A Smile.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
